@@ -1,0 +1,384 @@
+@charset "utf-8";
+
+/*  リセットCSS  */
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* ---html--- */ 
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-size-adjust: 100%;
+    overflow-x: hidden;
+    color: #333;
+    font: 300 14px / 1.9 "Noto Sans JP", Arial, Verdana, 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    background: #fff;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.sec_ttl {
+    font-size: 36px;
+    margin-bottom: 80px;
+    border-bottom: 3px solid #333;
+    display: inline-block;
+}
+
+/* header */
+
+header {
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 10000;
+}
+header .logo {
+    font-size: 32px;
+}
+header .fa-bars {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+.header_nav {
+    background-color: #fff;
+    text-align: left;
+    transform: translateY(-130%);
+    transition: 0.5s;
+    z-index: 10;
+}
+.header_menu li {
+    padding: 18px 0;
+    border: 1px solid #333;
+    border-left: none;
+}
+.header_menu li a:hover {
+    text-decoration: underline;
+}
+.header_menu .fas {
+    margin: 0 10px;
+}
+.header_icons {
+    padding: 15px 0;
+    border: 1px solid #333;
+    border-left: none;
+}
+.header_icons .fab {
+    margin: 5px;
+}
+.header_cover {
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.btn {
+    position: absolute;
+    top: 25px;
+    right: 19px;
+    transform: scale(1.7);
+    opacity: 0;
+    z-index: 1000;
+}
+.btn:checked ~ .header_nav {
+    transform: translateY(15%);
+}
+
+/* side_bar */
+
+.side_bar {
+    position: fixed;
+    right: 0;
+    width: 20%;
+    height: 100%;
+}
+.side_contents {
+    padding-left: 16%;
+}
+.side_contents .logo {
+    font-size: 45px;
+    padding: 20px 0 40px 0;
+}
+.side_menu li {
+    margin-bottom: 25px;
+}
+.side_menu li a {
+    font-size: 25px;
+}
+.side_menu li a:hover {
+    text-decoration: underline;
+}
+.side_icons .fab {
+    margin-right: 5%;
+}
+.side_icons .fab:hover {
+    opacity: 0.7;
+}
+
+/* main */
+
+.contents {
+    width: 80%;
+}
+
+.main_visual {
+    margin-bottom: 80px;
+}
+.main_visual img {
+    width: 100%;
+}
+
+/* PROFILE */
+
+.profile_wrapper {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.fa-user {
+    margin-right: 15px;
+}
+.profile_text {
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.profile_text img {
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.profile_text p {
+    text-align: left;
+}
+
+/* SKILL */
+.skill_wrapper {
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.skills .sub_ttl {
+    display: inline-block;
+    border-bottom: 2px solid #333;
+    margin-bottom: 20px;
+}
+.skills {
+    margin-bottom: 80px;
+}
+.fa-lightbulb {
+    margin-right: 15px;
+}
+.fa-laptop {
+    margin-right: 5px;
+}
+table {
+    text-align: center;
+    margin: 0 auto;
+}
+table tr {
+    padding: 40px;
+}
+table th {
+    padding: 10px;
+}
+table td {
+    padding: 4px 50px;
+}
+table th, table td {
+    border: solid 3px #333;
+}
+.sample_1 {
+    display: none;
+}
+
+/* GALLERY */
+
+.photo_wrapper {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.fa-images {
+    margin-right: 15px;
+}
+.photos {
+    flex-wrap: wrap;
+}
+.photos img {
+    max-width: 400px;
+    width: 100%;
+    height: 300px;
+    margin: 5px;
+}
+
+/* COMPANY */
+
+.company_wrapper {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.fa-building {
+    margin-right: 15px;
+}
+.company_contents {
+    display: flex;
+}
+.address {
+    font-size: 20px;
+    text-align: left;
+    margin-right: 30%;
+}
+.map {
+    width: 60%;
+    position: relative;
+    padding-bottom: 30%;
+}
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+
+footer {
+    width: 80%;
+    text-align: center;
+    margin-top: 200px;
+}
+footer .about p {
+    font-size: 20px;
+}
+footer .about a {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #333;
+}
+footer .about a:hover {
+    color: skyblue;
+}
+footer p {
+    font-size: 15px;
+    margin-bottom: 80px;
+}
